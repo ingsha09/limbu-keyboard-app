@@ -1,0 +1,40 @@
+# File: .github/workflows/android.yml
+name: Build Limbu Keyboard App
+
+# Trigger the workflow manually via the GitHub Actions UI
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # 1. Checkout the code from the repository
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    # 2. Set up the Java Development Kit (JDK)
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        cache: gradle # Cache Gradle dependencies for faster subsequent builds
+
+    # 3. Make the Gradle wrapper executable (important for Linux runners)
+    - name: Make Gradle wrapper executable
+      run: chmod +x ./gradlew
+
+    # 4. Run Gradle tasks to build the debug APK
+    # This includes downloading dependencies, compiling, and packaging.
+    - name: Build Debug APK
+      run: ./gradlew assembleDebug --stacktrace
+
+    # 5. Upload the generated APK as an artifact for download
+    - name: Upload APK
+      uses: actions/upload-artifact@v4
+      with:
+        name: Limbu-Keyboard-Debug-APK
+        path: app/build/outputs/apk/debug/app-debug.apk # Path where the APK is generated
+        retention-days: 30 # Keep the artifact for 30 days
