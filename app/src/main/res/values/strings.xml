@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Limbu Keyboard</string>
+    <string name="ime_name">Limbu/English Keyboard</string>
+    <string name="ime_settings">Limbu Keyboard Settings</string>
+</resources>
