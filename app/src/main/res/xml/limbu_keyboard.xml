@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard xmlns:android="http://schemas.android.com/apk/res/android"
+    android:keyWidth="10%p"
+    android:keyHeight="60dp"
+    android:horizontalGap="1dp"
+    android:verticalGap="1dp">
+
+    <Row>
+        <Key android:codes="0x11000" android:keyLabel="ᤀ" />
+        <Key android:codes="0x11001" android:keyLabel="ᤁ" />
+        <Key android:codes="0x11002" android:keyLabel="ᤂ" />
+        <Key android:codes="0x11003" android:keyLabel="ᤃ" />
+        <Key android:codes="0x11004" android:keyLabel="ᤄ" />
+        <Key android:codes="0x11005" android:keyLabel="ᤅ" />
+        <Key android:codes="0x11006" android:keyLabel="ᤆ" />
+        <Key android:codes="0x11007" android:keyLabel="ᤇ" />
+        <Key android:codes="0x11008" android:keyLabel="ᤈ" />
+        <Key android:codes="-5" android:keyLabel="DEL" android:isModifier="true" />
+    </Row>
+    <!-- Add more rows for other characters -->
+    <!-- Example row for vowels -->
+    <Row>
+        <Key android:codes="0x11020" android:keyLabel="ᤠ" />
+        <Key android:codes="0x11021" android:keyLabel="ᤡ" />
+        <Key android:codes="0x11022" android:keyLabel="ᤢ" />
+        <Key android:codes="0x11023" android:keyLabel="ᤣ" />
+        <Key android:codes="0x11024" android:keyLabel="ᤤ" />
+        <Key android:codes="0x11025" android:keyLabel="ᤥ" />
+        <Key android:codes="0x11026" android:keyLabel="ᤦ" />
+        <Key android:codes="0x11027" android:keyLabel="ᤧ" />
+        <Key android:codes="0x11028" android:keyLabel="ᤨ" />
+        <Key android:codes="-3" android:keyLabel="SPACE" android:isRepeatable="true" />
+    </Row>
+    <!-- Add more rows as needed -->
+    <Row>
+        <Key android:codes="-2" android:keyLabel="EN" android:keyEdgeFlags="left" />
+        <Key android:codes="0x11066" android:keyLabel="᥆" />
+        <Key android:codes="0x11067" android:keyLabel="᥇" />
+        <Key android:codes="0x11068" android:keyLabel="᥈" />
+        <Key android:codes="0x11069" android:keyLabel="᥉" />
+        <Key android:codes="0x1106A" android:keyLabel="᥊" />
+        <Key android:codes="0x1106B" android:keyLabel="᥋" />
+        <Key android:codes="0x1106C" android:keyLabel="᥌" />
+        <Key android:codes="0x1106D" android:keyLabel="᥍" />
+        <Key android:codes="0x1106E" android:keyLabel="᥎" />
+        <Key android:codes="0x1106F" android:keyLabel="᥏" />
+    </Row>
+
+</Keyboard>
